@@ -185,6 +185,11 @@
         b.className = 'bubble media';
         const img = document.createElement('img');
         img.src = 'abidal.gif';
+
+img.addEventListener('load', () => console.log('✅ GIF chargé'));
+img.addEventListener('error', () => console.error('❌ GIF introuvable'));
+
+        
         img.alt = 'Abidal GIF';
         img.decoding = 'async';
         img.loading = 'eager';
